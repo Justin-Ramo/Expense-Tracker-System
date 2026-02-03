@@ -1,0 +1,97 @@
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f9f9f9, #e0f7fa); /* Gradient background */
+}
+
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff; /* Bright blue color */
+    font-family: 'Arial', sans-serif; /* Change font for a modern look */
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container input {
+    margin-bottom: 15px; 
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; 
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.auth-container input:focus {
+    border-color: #007bff; 
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+}
+
+.auth-container button {
+    padding: 12px;
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; 
+    transition: background-color 0.3s, transform 0.2s; /* Add transform for button */
+}
+
+.auth-container button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.toggle-button {
+    margin-top: 10px; 
+    background-color: transparent; 
+    color: #007bff; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 14px; 
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.toggle-button:hover {
+    text-decoration: underline; 
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.notification {
+    position: absolute; 
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    z-index: 1000; 
+    transition: opacity 0.5s ease; 
+}
+
+/* Additional styles for a more lively look */
+.auth-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1); /* Light overlay */
+    border-radius: 8px;
+    z-index: -1; /* Behind the content */
+}
+
+.auth-container h2 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
